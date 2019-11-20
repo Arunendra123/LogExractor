@@ -12,7 +12,6 @@ public class MyFileReader
 		    FileWriter writer;
 		    pattern=LogExtractorViewer.t2.getText();
 			try {
-				
 				writer=new FileWriter(output); 
 				reader=new FileReader(input);
 				BufferedReader readme =new BufferedReader(reader);
@@ -30,11 +29,16 @@ public class MyFileReader
 				flags=1;
 				readme.close();
 				writeme.close();
+				reader.close();
+				writer.close();
+				
 			}
 			catch (IOException e) 
 			{
 				flags=0;		
 			}
+		
+			
 	}
 
 }
