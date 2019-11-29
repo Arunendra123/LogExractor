@@ -36,9 +36,10 @@ public	class LogExtractorViewer extends JFrame implements ActionListener
 		         }        
 		      }); 
 			//f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-			//Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-			//f.setLocation(dim.width/2-f.getSize().width/2, dim.height/2-f.getSize().height/2);
-			f.setLocationRelativeTo(null);
+			Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+			f.setLocation((dim.width/2-f.getSize().width/2)-250, (dim.height/2-f.getSize().height/2)-100);
+			
+			//f.setLocationRelativeTo(null);
 			//l  = new Label(" ");
 			//l1 = new Label("Input  File Path");
 			//l2 = new Label("Output File Path");
@@ -78,7 +79,7 @@ public	class LogExtractorViewer extends JFrame implements ActionListener
 			//p.add(l);
 			//p.add(l4);
 			f.add(p); 
-			f.setSize(500, 200); 
+			f.setSize(500, 250); 
 	        f.show();
 		} 
 		public void actionPerformed(ActionEvent e) 

@@ -26,16 +26,17 @@ public class MyFileReader
 					}
 					line = readme.readLine();
 				}
-				flags=1;
 				readme.close();
 				writeme.close();
 				reader.close();
 				writer.close();
-				
+				flags=1;
 			}
 			catch (IOException e) 
 			{
-				flags=0;		
+				flags=0;	
+				System.err.print("ERROR: File containing _______ information not found:\n");
+			    e.printStackTrace();
 			}
 		
 			

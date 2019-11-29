@@ -1,10 +1,10 @@
 package LogReader;
-public class Main {
-	public static void main(String Args[])
+public class Main 
+{
+	static public void main(String arg[]) throws java.io.IOException 
 	{
 		LogExtractorViewer.viewer();
-		
-	}  
-		
 
-}
+	}
+}  
+
